@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <nav>
+            <div class="lds-dual-ring"></div> 
+            <img id="logo" src="images/jungleShop_logo.png" alt="logo">
+            <br>
+            <button class="allKinds"    onclick="reload('all')">All kids</button> |
+            <button class="Orchids"     onclick="reload('orchid')">Orchids</button> |
+            <button class="Succulents"  onclick="reload('succulent')">Succulents</button> |
+            <button class="Monsters"    onclick="reload()">Monsters</button> 
+                
+        </nav>
+
+        <main>
+            
+            <div id="sale-bar">
+                <h2>SALE</h2>
+                <h3>UP TO 70%</h3>
+            </div>
+    
+            <div id="grid-container">
+                
+                <div>
+                    <div class="image"><img src="images/orchidea-biel.jpg"        alt="Wladyslaw Kolano"><button><i class="fa fa-cart-plus"></i></button></div>
+                    <span>Orchidea Biel</span>
+                    <s>12.99$</s><span class="price">9.99$</span>
+                </div>
+                <!--dynamically added flower offerts-->
+             
+            </div>
+
+        </main>
+
+
+        <script type="text/javascript" src="scripts/data.js"></script>
+        <script type="text/javascript" src="scripts/main.js"></script>
+    </body>
+</html>
